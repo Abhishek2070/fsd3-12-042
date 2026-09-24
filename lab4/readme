@@ -1,0 +1,36 @@
+# NPM Project
+1. goto project folder (by cd)
+2. type ```npm init -y```
+3. open package.json
+4. update `type:module`
+5. install nodemon `npm i nodemon -D`
+6. update script in package.json
+
+
+```
+script{
+    "start": "node app.js",
+    "dev": "nodemon prg7.js"
+}
+```
+
+7. add node_modules to gitignore
+8. to run use `npm run dev`
+
+## REST API
+- Representational State Transfer (REST)
+- majorly backend server return only data not html file
+- REST API uses (get, post, put, patch, delete) method to communicate with client
+any browser can check only get method
+- for other method type we use third party API Tester like postman, thunder client, echo api etc
+## Request type
+- Get-Get all , Get by ID
+   GET:/api/products/
+   GET:/api/products/--> get all is used when you want to get add data
+ GET:/api/products/101 -->get by id selected by particular ID
+- POST -/api/products --> is used  to add products into the Database
+data will be shared by echoAPI body 
+- PATCH/PUT- /api/products/201 -->both ID and echoAPI body is used. patch is used when 1-2 products want to changes.
+put method is used when more than 50 percent 
+
+- DELETE- /api/products/301 -->single product is deleted from database 
