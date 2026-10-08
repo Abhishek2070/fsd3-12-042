@@ -29,3 +29,7 @@ app.get("/", (req, res)=> {
 app.listen(4444, () =>{
     console.log("prg1 is running on port 4444");
 });
+
+## static import
+ * in express we can get any ststic html pages with the help of express.static pages
+ * express support middleware, when we have to execute sum functions before server execution there we use middleware app.use always a[pplied to insert any middleware]
